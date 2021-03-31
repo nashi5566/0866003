@@ -1,7 +1,7 @@
 language: java
+sudo: required
 jdk:
   - oraclejdk11
 
-script: 
- - mvn test -B
+script: mvn clean && mvn compile && mvn test-compile && mvn dependency:copy-dependencies && mvn jar:jar && mvn test
 
