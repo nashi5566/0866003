@@ -14,7 +14,7 @@ public class PriorityQueueTest {
     /* integer test case */
     public static Stream<Arguments> integerStreamProvider(){
         return Stream.of(
-                Arguments.of(new int[]{4, 5, 3, 7, 9}, new int[]{3, 4, 5, 7, 9}),
+                Arguments.of(new int[]{5, 4, 3, 2, 1}, new int[]{1, 2, 3, 4, 5}),
                 Arguments.of(new int[]{-1, 4, 5, -10, 2}, new int[]{-10, -1, 2, 4, 5}),
                 Arguments.of(new int[]{-5, -6, -11, 2, 7}, new int[]{-11, -6, -5, 2, 7}),
                 Arguments.of(new int[]{5, -10, -12, 1, 0, 9}, new int[]{-12, -10, 0, 1, 5, 9}),
